@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jolly+Lodger&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/icons/icon.ico">
+
+    <title>Accepterr</title>
+</head>
+<body>
+    <header id="bg-header">
+        <div id="title-div">
+            <p id="main-title">Accep</p><p id="main-title-2">terr</p>
+        </div>
+        <p class="version-p">v1.0.0</p>
+    </header>
+
+    <main id="bg-main">
+        <div class="container">
+            <article id="article-use">
+                <h2 class="use-title">IMPORTANTE</h2>
+                <p class="use-p">Para el correcto funcionamiento del programa, el cliente de LoL <b>NO</b> debe ser movido del lugar donde aparecio cuando se abrio.</p>
+                
+                <div class="select-options">
+                    <label for="sel-champ-ban" class="lbl-champ">Campeon a banear</label>
+                    <select name="form-select" id="sel-champ-ban" class="sel-champ">
+                        <!-- Cargo dinamicamente en JS -->
+                    </select>
+                    
+                    <label for="sel-champ-pick" class="lbl-champ">Campeon a seleccionar</label>
+                    <select name="form-select" id="sel-champ-pick" class="sel-champ">
+                        <!-- Cargo dinamicamente en JS -->
+                    </select>
+                </div>
+                
+            </article>
+            <img id="img-lb" src="../assets/lb.png" alt="">
+        </div>
+
+        <aside id="options-menu">
+            <div class="option-card">
+                <h2 class="sub-title">Auto Aceptador</h2>
+                <button id="btn-auto-accept" class="btn btn-desactivated">Desactivado</button>
+            </div>
+            <div class="option-card">
+                <h2 class="sub-title">Auto Baneo</h2>
+                <button id="btn-auto-ban" class="btn btn-desactivated">Proximamente</button>
+            </div>
+            <div class="option-card">
+                <h2 class="sub-title">Auto Selector</h2>
+                <button id="btn-auto-select" class="btn btn-desactivated">Proximamente</button>
+            </div>
+        </aside>
+    </main>
+
+    <script src="../loadChampions.js"></script>
+    <script src="../app.js"></script>
+</body>
+</html>
